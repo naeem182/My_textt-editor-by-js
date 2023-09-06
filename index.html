@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://kit.fontawesome.com/253c203055.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+  <header class="m-2">
+    <a href="./index.html" class="bg-purple-900 rounded-md px-2 py-1 text-white">Back Home</a>
+  </header>
+  <main class="w-9/12 mx-auto mt-8 p-7 bg-blue-300 rounded-xl">
+    <h1 class="text-3xl text-white text-center">My Lovely Editor</h1>
+    <section id="editor-container" class="bg-blue-200 mt-3 p-4 rounded-md">
+      <header id="editor-header" class="border-b-2 border-black py-4">
+        <div class="flex justify-center items-center gap-4">
+          <i id="fontBold"
+            class="fa-solid fa-bold cursor-pointer duration-300 p-2 rounded-md hover:text-white hover:bg-violet-800"></i>
+          <i id="textItalic"
+            class="fa-solid fa-italic cursor-pointer duration-300 p-2 rounded-md hover:text-white hover:bg-violet-800"></i>
+          <i id="textUnderline"
+            class="fa-solid fa-underline cursor-pointer duration-300 p-2 rounded-md hover:text-white hover:bg-violet-800"></i>
+          <i id="textLeft"
+            class="fa-solid fa-align-left cursor-pointer duration-300 p-2 rounded-md hover:text-white hover:bg-violet-800"></i>
+          <i id="textCenter"
+            class="fa-solid fa-align-center cursor-pointer duration-300 p-2 rounded-md hover:text-white hover:bg-violet-800"></i>
+          <i id="textRight"
+            class="fa-solid fa-align-right cursor-pointer duration-300 p-2 rounded-md hover:text-white hover:bg-violet-800"></i>
+          <i id="textJustify"
+            class="fa-solid fa-align-justify cursor-pointer duration-300 p-2 rounded-md hover:text-white hover:bg-violet-800"></i>
+          <div>
+            <label for="font-size" class="font-medium">Font Size:</label>
+            <input type="number" id="fontSize" min="8" max="40" value="16" class="w-12 rounded-md p-1 cursor-pointer" />
+          </div>
+          <input type="button" id="textTransform" value="aA"
+            class="font-medium cursor-pointer duration-300 p-2 rounded-md hover:text-white hover:bg-violet-800" />
+          <input type="color" id="colorCode" class="rounded-sm cursor-pointer" value="#ff0000" />
+        </div>
+      </header>
+      <div id="textarea-container" class="mt-2">
+        <textarea name="textarea" id="textareafield" cols="30" rows="10"
+          class="w-full h-80 p-3 rounded-md box-border"></textarea>
+      </div>
+    </section>
+  </main>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
